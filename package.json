@@ -2,9 +2,9 @@
   "name": "sistema-biblioteca",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "node server.js",
     "build": "vite build",
     "preview": "vite preview",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "pinia": "^3.0.1",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
